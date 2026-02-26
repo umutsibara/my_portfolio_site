@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Muhammed Umut Şıbara</title>
+  <style>
+    @media print {
+      body {
+        zoom: 1 !important;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        box-shadow: none !important;
+        margin: 0;
+        width: 21cm !important;
+        min-height: 29.7cm !important;
+      }
+
+      a {
+        color: #0073e6 !important;
+        text-decoration: none !important;
+      }
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.4;
+      margin: 0;
+      padding: 0;
+      background: #f0f2f5;
+      color: #333;
+    }
+
+    .container {
+      margin: 0 auto;
+      padding: 1cm 1.25cm;
+      width: 21cm;
+      min-height: 29.7cm;
+      font-size: 11pt;
+      background: white;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+      border: 2px solid #0073e6;
+    }
+
+    .header-info {
+      flex: 1;
+    }
+
+    .header-info .name {
+      font-size: 22pt;
+      font-weight: 600;
+      color: #2c3e50;
+      margin: 0 0 4px 0;
+    }
+
+    .contact-info {
+      margin-top: 5px;
+      font-size: 10pt;
+      text-align: left;
+      color: #555;
+    }
+
+    .contact-info a {
+      color: #0073e6;
+      text-decoration: none;
+      margin-right: 10px;
+      display: inline-block;
+    }
+
+    .section {
+      margin-bottom: 12px;
+    }
+
+    .section h2 {
+      color: #0073e6;
+      font-size: 14pt;
+      font-weight: 600;
+      margin-bottom: 8px;
+      border-bottom: 1.5px solid #0073e6;
+      padding-bottom: 4px;
+      display: flex;
+      align-items: center;
+    }
+
+    .section p,
+    .section li {
+      font-size: 10.5pt;
+      color: #444;
+      margin-bottom: 4px;
+      text-align: justify;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 0;
+    }
+
+    .section ul li {
+      margin-bottom: 8px;
+      padding-left: 15px;
+      position: relative;
+    }
+
+    .section ul li::before {
+      content: "•";
+      color: #0073e6;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .project-category {
+      font-weight: 600;
+      color: #2c3e50;
+      text-transform: uppercase;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      border-bottom: 1.5px solid #d0d7de;
+      padding-bottom: 3px;
+    }
+
+    .project-details {
+      margin-top: 2px;
+      padding-left: 5px;
+    }
+
+    .project-tech {
+      font-style: italic;
+      color: #555;
+      font-size: 9.5pt;
+      margin-top: 2px;
+    }
+
+    .experience-item {
+      margin-bottom: 12px;
+    }
+
+    .experience-header {
+      font-weight: 600;
+      color: #333;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="fotograf.jpg" alt="Profil Fotoğrafı" />
+      <div class="header-info">
+        <p class="name">Muhammed Umut ŞIBARA</p>
+        <div class="contact-info">
+          <a href="mailto:umutsibara@gmail.com">umutsibara@gmail.com</a>
+          <a href="tel:05010575716">0501 057 5716</a>
+          <a href="https://linkedin.com/in/umut-şıbara-54855524a/">LinkedIn</a>
+          <a href="https://github.com/umutsibara">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Profil Özeti</h2>
+      <p>Yazılım mühendisliği eğitimim sürecinde kurumsal sistemler, oyun geliştirme ve veri bilimleri üzerinde deneyim
+        kazandıktan sonra mobil uygulama geliştirme alanında uzmanlaştım. <strong>Kotlin</strong> ve
+        <strong>Flutter</strong> teknolojileri ile modern, yüksek performanslı ve kullanıcı odaklı çözümler
+        üretmekteyim. Kurumsal staj ve topluluk liderliği tecrübelerimle, blockchain entegrasyonundan yapay zeka
+        destekli mobil sistemlere kadar geniş bir yelpazede Full Stack projeler geliştirme yetkinliğine sahibim.</p>
+    </div>
+
+    <div class="section">
+      <h2>Deneyimler</h2>
+      <div class="experience-item">
+        <div class="experience-header">
+          <span>Akdeniz Üniversitesi Bilgi İşlem Daire Başkanlığı - Yaz Stajı</span>
+          <span>Temmuz 2025 – Ekim 2025</span>
+        </div>
+        <p>Stajım süresince Akdeniz Üniversitesi için iki temel uygulama (Kan Takip Sistemi ve ESTM Uygulaması)
+          geliştirerek kurumsal süreçleri deneyimledim. Yazılım geliştirmenin yanı sıra QA tester olarak kalite kontrol
+          süreçlerini yürüttüm, yapay zeka entegrasyonları ve algoritmik optimizasyon çalışmalarıyla teknik birikimimi
+          kurumsal düzeyde derinleştirdim.</p>
+      </div>
+      <div class="experience-item">
+        <div class="experience-header">
+          <span>Çekirdek Ekip Üyesi - Google Developer Student Clubs (GDSC)</span>
+          <span>Ekim 2022 – Haziran 2023</span>
+        </div>
+        <p>Celal Bayar Üniversitesi bünyesinde teknoloji atölyeleri ve seminer organizasyonlarında aktif rol alarak
+          teknik sunum ve topluluk yönetimi becerilerimi geliştirdim. Akran eğitimi ve etkinlik moderatörlüğü
+          süreçlerinde yer alarak kendimi teknik iletişim alanında ileriye taşıdım.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Projeler</h2>
+
+      <div class="project-category">Flutter Projeleri</div>
+      <ul>
+        <li>
+          <strong>Hesap Kimde? (Mobil Ortak Harcama Takibi)</strong> |
+          <span style="color: #e67e22; font-weight: 600; font-size: 9.5pt;">
+            15 Ocak'a kadar Play Store'da kapalı test aşamasındadır; bu tarihten sonra genel erişime açılacaktır.
+          </span>
+          <div class="project-details">
+            Arkadaş grupları arasındaki ortak harcamaların adilce bölüştürülmesini ve borç takibini sağlayan bir mobil
+            uygulamadır.
+            <div class="project-tech"><strong>Teknolojiler:</strong> Flutter, BLoC Pattern, Firebase (Auth, Firestore,
+              Messaging).</div>
+          </div>
+        </li>
+        <li>
+          <strong>ESTM (Eğitim Sosyal Tesisler Müdürlüğü Uygulaması)</strong>
+          <div class="project-details">
+            Akdeniz Üniversitesi spor tesisleri için mevcut web sitesini mobil platformlara taşıyan uygulamadır. Üye
+            girişi/kaydı, tesis görüntüleme ve QR kod ile hızlı tesis giriş özelliklerini içermektedir.
+            <div class="project-tech"><strong>Teknolojiler (Frontend):</strong> Flutter, Riverpod, Clean Architecture,
+              QR Scanner, Material 3.</div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="project-category">Kotlin Projeleri</div>
+      <ul>
+        <li>
+          <strong>PatiTakip (Sokak Hayvanları Yönetim Sistemi)</strong>
+          <div class="project-details">
+            Sokak hayvanlarının beslenme, sağlık ve ihbar süreçlerini harita üzerinden koordine eden bir sosyal
+            sorumluluk platformudur.
+            <div class="project-tech"><strong>Backend:</strong> Node.js ve PostgreSQL tabanlı REST API altyapısı
+              kuruldu. <strong>Mobil:</strong> Kotlin, Jetpack Compose, Google Maps API.</div>
+          </div>
+        </li>
+        <li>
+          <strong>CoinPay (NFC Destekli Kripto Ödeme Cüzdanı)</strong>
+          <div class="project-details">
+            Polygon ağındaki kripto varlıkların NFC teknolojisiyle POS cihazlarında harcanabilmesini sağlayan blockchain
+            tabanlı Android cüzdanıdır.
+            <div class="project-tech"><strong>Blockchain:</strong> Web3j, Polygon Amoy Testnet, Marqeta API.
+              <strong>Güvenlik:</strong> Android Keystore, Biyometrik Doğrulama.</div>
+          </div>
+        </li>
+        <li>
+          <strong>Loopin (Sosyal Etkinlik Platformu)</strong> | <a href="https://github.com/IsikYildiz/Loopin"
+            target="_blank">GitHub</a>
+          <div class="project-details">
+            Kullanıcıların lokasyon bazlı etkinlikler oluşturup sosyalleşebildiği tam yığın mobil uygulama projesidir.
+            <div class="project-tech"><strong>Backend:</strong> Node.js, Express, MySQL. <strong>Mobil:</strong> Kotlin
+              (MVVM), Dagger Hilt, Retrofit.</div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="project-category">Web & Sistem Projeleri</div>
+      <ul>
+        <li>
+          <strong>Hasta Kan Takip Sistemi</strong> | <a href="https://github.com/umutsibara/HastaneKanTakip"
+            target="_blank">GitHub</a>
+          <div class="project-details">
+            Akdeniz Üniversitesi Hastanesi kan birimi için geliştirilen; hemşirelerin hasta kayıtlarını ve hasta
+            bilgilerini takip edip takvim üzerinden randevu verebildiği kapsamlı bir platformdur.
+            <div class="project-tech"><strong>Altyapı:</strong> PHP 8.2, MSSQL (SQL Server 2022) ve Docker konteyner
+              mimarisi ile kurgulandı; Vanilla JS ile modüler bir arayüz tasarlandı.</div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="project-category">Yapay Zeka & Oyun Geliştirme</div>
+      <ul>
+        <li>
+          <strong>AI Destekli Satranç FEN Dönüştürücü</strong> | <a
+            href="https://github.com/umutsibara/AI-Learning-Projects" target="_blank">GitHub</a>
+          <div class="project-details">
+            Satranç tahtası fotoğraflarını dijital FEN formatına dönüştüren projedir. Model eğitiminde
+            <strong>YOLOv8</strong> ve <strong>Roboflow</strong> kullanılarak nesne tanıma modelleri optimize
+            edilmiştir.
+            <div class="project-tech"><strong>Teknolojiler:</strong> Python (Flask), YOLOv8, Kotlin (Retrofit), OpenCV.
+            </div>
+          </div>
+        </li>
+        <li>
+          <strong>Emlak Fiyat Tahmin Uygulaması</strong> | <a href="https://github.com/umutsibara/AI-Learning-Projects"
+            target="_blank">GitHub</a>
+          <div class="project-details">
+            Makine öğrenmesi (Machine Learning) yöntemleri kullanılarak kullanıcı girdilerine göre interaktif emlak
+            fiyat tahmini yapan bir sistemdir.
+            <div class="project-tech"><strong>Teknolojiler:</strong> Python, Scikit-learn (Regresyon Modelleri), Pandas,
+              Streamlit.</div>
+          </div>
+        </li>
+        <li>
+          <strong>Save the Elders (2D Platform Oyunu)</strong> | <a href="https://fishecks.itch.io/savetheelders"
+            target="_blank">itch.io</a>
+          <div class="project-details">
+            Unity ve C# ile Pagit Game Jam için geliştirilen ve <strong>birincilik ödülü</strong> kazanan stratejik
+            platform oyunudur.
+          </div>
+        </li>
+      </ul>
+
+      <div class="project-category">Diğer Akademik & Yazılım Projeleri</div>
+      <ul>
+        <li>
+          <strong>Çağrı Merkezi Veritabanı Uygulaması</strong> | <a
+            href="https://github.com/umutsibara/CSharp-Learning-Journey" target="_blank">GitHub</a>
+          <div class="project-details">
+            Çağrı merkezi operasyonlarını dijitalleştiren, müşteri kayıtlarını ve süreç yönetimini SQL tabanlı
+            veritabanı ile sağlayan bir masaüstü otomasyon sistemidir (C# & WinForms).
+          </div>
+        </li>
+        <li><strong>Market Kasa Sistemi (C++):</strong> Veri Yapıları (Bağlantılı Liste, Yığın, Kuyruk) alanındaki
+          teorik bilgilerimi pratiğe döktüğüm simülasyon projesi. | <a
+            href="https://github.com/umutsibara/cpp-data-structures-projects" target="_blank">GitHub</a></li>
+        <li><strong>Kalori Takip Sistemi (Java):</strong> Java ile Nesne Yönelimli Programlama (OOP) prensiplerini ve
+          modüler sınıf tasarımını kavradığım konsol uygulaması. | <a
+            href="https://github.com/umutsibara/OOP-Java-Labs-and-Project" target="_blank">GitHub</a></li>
+        <li><strong>C Sezar Şifreleme & Matris:</strong> C dili ile dosya işlemleri, bellek yönetimi ve temel şifreleme
+          mantığı üzerine geliştirdiğim algoritma çalışmaları. | <a
+            href="https://github.com/umutsibara/C-Proje-Odevleri" target="_blank">GitHub</a></li>
+        <li><strong>Optimizasyon Algoritmaları:</strong> Python ve CuPy (GPU) kullanarak NP-zor problemlerini çözen
+          yüksek performanslı algoritmik çözümler. | <a href="https://github.com/umutsibara/daaa-projects"
+            target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Eğitim Bilgileri</h2>
+      <ul>
+        <li><strong>Celal Bayar Üniversitesi</strong> – Yazılım Mühendisliği (Lisans) | (2022 – 2026) – GPA: 3.22/4.00
+        </li>
+        <li><strong>İMKB Mesleki ve Teknik Anadolu Lisesi</strong> – Bilişim Teknolojileri (Veritabanı Programcılığı)
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
