@@ -5,6 +5,7 @@ import { useState } from "react";
 import type { Project } from "@/lib/data/projects";
 import PhoneFrame from "./PhoneFrame";
 import TerminalView from "./TerminalView";
+import BrowserFrame from "./BrowserFrame";
 
 interface ProjectCardProps {
   project: Project;
@@ -118,13 +119,33 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         </div>
 
         {/* Visual demo */}
-        <div className="flex justify-center">
+        <div className="flex justify-center w-full">
           {project.type === "phone" ? (
             <motion.div
               animate={hovered ? { scale: 1.02, rotateY: 3 } : { scale: 1, rotateY: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <PhoneFrame title={project.title} />
+              <PhoneFrame title={project.title}>
+                {project.videoUrl ? (
+                  <video autoPlay loop muted playsInline src={project.videoUrl} className="absolute inset-0 w-full h-full object-cover" />
+                ) : project.imageUrl ? (
+                  <img src={project.imageUrl} alt={project.title} className="absolute inset-0 w-full h-full object-cover" />
+                ) : null}
+              </PhoneFrame>
+            </motion.div>
+          ) : project.type === "browser" ? (
+            <motion.div
+              className="w-full"
+              animate={hovered ? { scale: 1.02, y: -5 } : { scale: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+            >
+              <BrowserFrame url={project.demoUrl}>
+                {project.videoUrl ? (
+                  <video autoPlay loop muted playsInline src={project.videoUrl} className="absolute inset-0 w-full h-full object-cover" />
+                ) : project.imageUrl ? (
+                  <img src={project.imageUrl} alt={project.title} className="absolute inset-0 w-full h-full object-cover" />
+                ) : null}
+              </BrowserFrame>
             </motion.div>
           ) : (
             <div className="w-full">

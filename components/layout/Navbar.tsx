@@ -8,12 +8,13 @@ const navLinks = [
   { href: "#projects", label: "Projeler" },
   { href: "#skills", label: "Yetenekler" },
   { href: "#experience", label: "Deneyim" },
+  { href: "#courses", label: "Eğitim" },
   { href: "#contact", label: "İletişim" },
 ];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
+
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -58,18 +59,29 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* CTA */}
-        <a
-          href="/Stajyer_MuhammedUmutSibara_AndroidDevelopper.pdf"
-          download
-          className="relative group flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-white overflow-hidden border border-[#13B9FD]/30 hover:border-[#13B9FD]/70 transition-all duration-300"
-        >
-          <span className="absolute inset-0 bg-gradient-to-r from-[#13B9FD]/10 to-[#7F52FF]/10 opacity-0 group-hover:opacity-100 transition-opacity" />
-          <svg className="w-4 h-4 text-[#13B9FD]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-          </svg>
-          <span className="relative">CV İndir</span>
-        </a>
+        {/* Contact Info & CTA */}
+        <div className="flex items-center gap-4">
+          <div className="hidden lg:flex flex-col items-end mr-2 text-right">
+            <a href="tel:+905010575716" className="text-sm font-mono text-slate-300 hover:text-[#13B9FD] transition-colors">
+              0501 057 57 16
+            </a>
+            <a href="mailto:umutsibara@gmail.com" className="text-xs font-mono text-slate-400 hover:text-[#7F52FF] transition-colors">
+              umutsibara@gmail.com
+            </a>
+          </div>
+
+          <a
+            href="/Stajyer_MuhammedUmutSibara_AndroidDevelopper.pdf"
+            download
+            className="relative group flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-white overflow-hidden border border-[#13B9FD]/30 hover:border-[#13B9FD]/70 transition-all duration-300"
+          >
+            <span className="absolute inset-0 bg-gradient-to-r from-[#13B9FD]/10 to-[#7F52FF]/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+            <svg className="w-4 h-4 text-[#13B9FD]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            <span className="relative">CV İndir</span>
+          </a>
+        </div>
       </div>
     </motion.nav>
   );

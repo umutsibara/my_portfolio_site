@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { timelineEntries } from "@/lib/data/experience";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -45,7 +45,6 @@ export default function TimelineSection() {
   return (
     <section id="experience" ref={containerRef} className="relative py-32 px-6">
       <div className="max-w-4xl mx-auto">
-        {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -61,9 +60,7 @@ export default function TimelineSection() {
           </h2>
         </motion.div>
 
-        {/* Timeline */}
         <div className="relative">
-          {/* Vertical line */}
           <div className="absolute left-6 top-0 bottom-0 w-px bg-white/5">
             <div
               ref={lineRef}
@@ -84,7 +81,6 @@ export default function TimelineSection() {
                   transition={{ duration: 0.6, delay: i * 0.05 }}
                   className="relative"
                 >
-                  {/* Dot */}
                   <div
                     className="absolute -left-[46px] w-5 h-5 rounded-full border-2 border-[#0B0E14] flex items-center justify-center"
                     style={{ background: style.color, boxShadow: `0 0 12px ${style.color}66` }}
@@ -94,7 +90,6 @@ export default function TimelineSection() {
                     )}
                   </div>
 
-                  {/* Card */}
                   <div
                     className={`rounded-2xl p-6 transition-all duration-300 hover:border-white/10 ${
                       entry.highlight ? "neon-border-blue" : ""

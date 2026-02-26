@@ -107,10 +107,10 @@ export default function HeroSection() {
           {/* Main Headline */}
           <motion.div variants={itemVariants} className="space-y-2">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.05] tracking-tight text-white">
-              Android &amp; Flutter
+              Flutter &amp; Kotlin
             </h1>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.05] tracking-tight">
-              <span className="gradient-text">Developer</span>
+              <span className="gradient-text">Android Developer</span>
             </h1>
           </motion.div>
 
@@ -161,7 +161,7 @@ export default function HeroSection() {
             className="flex items-center gap-8 pt-6 border-t border-white/5 w-full justify-center"
           >
             {[
-              { label: "Tamamlanan Proje", value: "10+" },
+              { label: "Tamamlanan Proje", value: "9" },
               { label: "GPA", value: "3.22" },
               { label: "Teknoloji", value: "15+" },
             ].map((stat) => (

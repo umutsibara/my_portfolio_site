@@ -8,7 +8,7 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className="relative py-32 px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Section header */}
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -16,10 +16,10 @@ export default function ProjectsSection() {
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
         >
-          <span className="inline-block font-mono text-xs text-[#13B9FD] tracking-widest uppercase mb-4">
+          <span className="block font-mono text-xs text-[#13B9FD] tracking-widest uppercase mb-4">
             // Portfolio
           </span>
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4 section-title inline-block">
+          <h2 className="block text-4xl md:text-5xl font-black text-white mb-4 section-title">
             Projelerim
           </h2>
           <p className="text-slate-400 max-w-xl mx-auto mt-6">
@@ -28,7 +28,7 @@ export default function ProjectsSection() {
           </p>
         </motion.div>
 
-        {/* Project cards */}
+
         <div className="space-y-8">
           {projects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />

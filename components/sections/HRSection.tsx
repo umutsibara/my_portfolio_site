@@ -101,7 +101,6 @@ export default function HRSection() {
             ))}
           </div>
 
-          {/* Resume CTA */}
           <motion.a
             href="/Stajyer_MuhammedUmutSibara_AndroidDevelopper.pdf"
             download
@@ -122,7 +121,6 @@ export default function HRSection() {
               boxShadow: "0 0 30px rgba(19,185,253,0.3)",
             }}
           >
-            {/* Shimmer overlay */}
             <div className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity">
               <div className="shimmer absolute inset-0" />
             </div>
